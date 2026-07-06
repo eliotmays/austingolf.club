@@ -11,23 +11,39 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
             background-color: #ffffff;
             color: #111111;
+            padding: 2rem 1rem;
+            box-sizing: border-box;
         }
         .container {
             text-align: center;
+            max-width: 480px;
             line-height: 1.6;
         }
-        p {
-            margin: 0.5rem 0;
-            font-size: 1.1rem;
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 1.5rem;
         }
-        /* Targets the title specifically to double its size */
         .title {
             font-size: 2.2rem;
-            margin-bottom: 1rem;
+            margin: 0 0 1.5rem 0;
+        }
+        .about-section {
+            text-align: justify;
+            text-justify: inter-word;
+            font-size: 1rem;
+            color: #333333;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 2rem;
+        }
+        .contact-section p {
+            margin: 0.4rem 0;
+            font-size: 1.05rem;
         }
         a {
             color: #111111;
@@ -37,7 +53,7 @@
             text-decoration: underline;
         }
         .login-link {
-            margin-top: 2rem;
+            margin-top: 2.5rem;
             font-size: 0.9rem;
             opacity: 0.6;
         }
@@ -46,14 +62,22 @@
 <body>
 
     <div class="container">
-        <!-- Added the .title class here -->
-        <p class="title"><strong>Austin Golf Club</strong></p>
-        <p>24900 State Hwy 71, Spicewood, TX 78669</p>
-        <p><a href="tel:+151226497877">(512) 264-6787</a></p>
-        <p><a href="mailto:austingolfclub@gmail.com">austingolfclub@gmail.com</a></p>
+        <img src="logo.jpg" alt="Austin Golf Club Logo" class="logo">
+
+        <h1 class="title"><strong>Austin Golf Club</strong></h1>
+        
+        <div class="about-section">
+            <p>Austin Golf Club is a privately owned Golf Club operating as a 501(c)(7) non-profit organization. Exclusively enjoyed by members and their guests, the property features 18 holes seamlessly built into a piece of oak-filled, Texas wilderness 30 miles northwest of downtown Austin. Designed by Coore & Crenshaw in 2001, the Club finds its strength in its simplicity.</p>
+        </div>
+
+        <div class="contact-section">
+            <p>24900 State Hwy 71, Spicewood, TX 78669</p>
+            <p><a href="tel:+15122646787">(512) 264-6787</a></p>
+            <p><a href="mailto:austingolfclub@gmail.com">austingolfclub@gmail.com</a></p>
+        </div>
         
         <div class="login-link">
-            <p><a href="login.html">Member Login</a></p>
+            <p><a href="login.html">Member Login Portal</a></p>
         </div>
     </div>
 
