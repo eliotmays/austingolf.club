@@ -13,15 +13,22 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            background-color: #ffffff;
+            background-color: #f8f9fa; /* Soft light gray background for contrast */
             color: #111111;
             padding: 2rem 1rem;
             box-sizing: border-box;
         }
-        .container {
-            text-align: center;
+        /* The container is now a styled card layout with a shadow */
+        .card {
+            background-color: #ffffff;
             max-width: 480px;
-            line-height: 1.6;
+            width: 100%;
+            padding: 3rem 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.03);
+            text-align: center;
+            box-sizing: border-box;
         }
         .logo {
             width: 120px;
@@ -61,7 +68,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="card">
         <img src="logo.png" alt="Austin Golf Club Logo" class="logo">
 
         <h1 class="title"><strong>Austin Golf Club</strong></h1>
